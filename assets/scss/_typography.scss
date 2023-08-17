@@ -1,0 +1,91 @@
+@import url("https://use.typekit.net/lxz4jhk.css");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import './variables';
+@import './mixins';
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "bigcity-grotesque-pro", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 40px;
+    color: $clr-black;
+    @include mq(lg){
+      font-size: 18px;
+      line-height: 30px;
+    }
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-weight: 500;
+}
+
+
+h1,h2{
+    font-size: 60px;
+    line-height: 90px;
+    color: $clr-black;
+    @include mq(xxl){
+        font-size: 50px;
+        line-height: 50px;
+    }
+    @include mq(md){
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+h3{
+    font-size: 35px;
+    line-height: 50px;
+    @include mq(xl){
+        font-size: 30px;
+        line-height: 40px;
+    }
+    @include mq(md){
+        font-size: 22px;
+        line-height: 32px;
+    }
+}
+h4{
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 16px;
+    @include mq(md){
+        font-size: 22px;
+        line-height: 32px;
+    }
+}
+h5{
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 0;
+    font-family: "bigcity-grotesque-pro", sans-serif;
+    @include mq(md){
+        font-size: 22px;
+        line-height: 40px;
+    }
+}
+
+.section-title {
+    font-size: 115px;
+    line-height: 90px;
+    font-weight: 500;
+    padding-top: 230px;
+    @include mq(lg){
+        font-size: 50px;
+        line-height: 70px;
+    }
+}
+.section-title-lg {
+    font-size: 60px;
+    line-height: 90px;
+    color: $clr-primary;    
+    @include mq(md){
+        font-size: 32px;
+        line-height: 45px;
+    }
+}

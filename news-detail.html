@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEWS DETAIL</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap css file -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- swiper css file -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- aos css file -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- custom css file -->
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/banner.css" />
+    <link rel="stylesheet" href="assets/css/about-us.css" />
+    <link rel="stylesheet" href="assets/css/projects.css" />
+    <link rel="stylesheet" href="assets/css/news.css" />
+    <link rel="stylesheet" href="assets/css/purchase.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/slider.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body class="bg__light">
+   <!-- header start -->
+   <header class="header header--active">
+    <nav class="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo.svg" alt="site logo" class="logo" />
+            <img
+              src="assets/images/logo-scroll.svg"
+              alt="site logo"
+              class="logo-scroll"
+            />
+            <img
+              src="assets/images/logo--light.svg"
+              alt="site logo"
+              class="logo--light"
+            />
+          </a>
+          <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="22"
+            viewBox="0 0 32 22"
+            class="ham-white"
+          >
+            <g
+              id="Gruppe_313"
+              data-name="Gruppe 313"
+              transform="translate(-3816.328 -4491.226)"
+            >
+              <rect
+                id="Rechteck_47"
+                data-name="Rechteck 47"
+                width="32"
+                height="2"
+                rx="1"
+                transform="translate(3816.328 4491.226)"
+                fill="#fff"
+              />
+              <rect
+                id="Rechteck_48"
+                data-name="Rechteck 48"
+                width="32"
+                height="2"
+                rx="1"
+                transform="translate(3816.328 4501.226)"
+                fill="#fff"
+              />
+              <rect
+                id="Rechteck_49"
+                data-name="Rechteck 49"
+                width="32"
+                height="2"
+                rx="1"
+                transform="translate(3816.328 4511.226)"
+                fill="#fff"
+              />
+            </g>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="22"
+            viewBox="0 0 32 22"
+            class="ham-primary"
+          >
+            <g
+              id="Gruppe_313"
+              data-name="Gruppe 313"
+              transform="translate(-3816.328 -4491.226)"
+            >
+              <rect
+                id="Rechteck_47"
+                data-name="Rechteck 47"
+                width="32"
+                height="2"
+                rx="1"
+                transform="translate(3816.328 4491.226)"
+                fill="#071825"
+              />
+              <rect
+                id="Rechteck_48"
+                data-name="Rechteck 48"
+                width="32"
+                height="2"
+                rx="1"
+                transform="translate(3816.328 4501.226)"
+                fill="#071825"
+              />
+              <rect
+                id="Rechteck_49"
+                data-name="Rechteck 49"
+                width="32"
+                height="2"
+                rx="1"
+                transform="translate(3816.328 4511.226)"
+                fill="#071825"
+              />
+            </g>
+          </svg>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header justify-content-end pe-0 mb-50">
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body flex-column flex-lg-row-reverse">
+              <ul class="navbar-nav justify-content-lg-end align-items-lg-end flex-grow-1">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"  href="about-us.html"
+                    >Über uns</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"  href="projects.html"
+                    >Projekte</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active"  href="news.html"
+                    >News</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"  href="purchase.html">Ankauf</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"  href="contact.html">Kontakt</a>
+                </li>
+              </ul>
+              
+              <div class="contact-info">
+                <div class="contact__links">
+                  <p class="contact__text text-accent">Kontakt</p>
+                  <div>
+                    <a href="mailto:info@suwohnbau.de" class="contact-link"
+                      >info@suwohnbau.de</a
+                    >
+                    <a href="tel:089-244-126-520" class="contact-link"
+                      >089/244 126 520</a
+                    >
+                  </div>
+                </div>
+                <div class="contact__address">
+                  <p class="contact__text text-accent">Adresse</p>
+                  <p class="text-white mb-0">
+                    SU Wohnabau GmbH <br />Fraunhoferstraße 36 <br />
+                    80469 München
+                  </p>
+                </div>
+                <div
+                class="contact__social-links"
+              >
+                <p class="contact__text text-accent">Social Media</p>
+                <a href="#" class="social-link">
+                  <img
+                    src="assets/images/instagram.svg"
+                    alt="instagram icon"
+                    class="social-link-icon"
+                  />
+                </a>
+                <a href="#" class="social-link">
+                  <img
+                    src="assets/images/linkedin.svg"
+                    alt="linkedin icon"
+                    class="social-link-icon"
+                  />
+                </a>
+                <a href="#" class="social-link">
+                  <img
+                    src="assets/images/social-icon.svg"
+                    alt="app icon"
+                    class="social-link-icon"
+                  />
+                </a>
+              </div>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header end -->
+    <main>
+
+        <!-- banner section start -->
+        <section class="banner min-h-md banner--news-detail -m-top">
+          <div class="container custom-container min-h-inherit">
+            <div class="row min-h-inherit">
+                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start">
+                    <h1 class="banner__title section-title">
+                
+                  </h1></div>
+            </div>
+          </div>
+          <div class="scroll-btn-container bottom-sm">
+            <div class="mouse">
+              <div class="scroller"></div>
+            </div>
+            <p class="scroll-text d-none">scroll</p>
+          </div>
+        </section>
+        <!-- banner section end -->
+
+
+      </div>
+
+      <!-- project detail start -->
+      <section class="project-detail block-margin" >
+        <div class="container custom-container">
+            <h3 class="mb-50"><span class="text-accent">/</span> Projektstart eines Reihenhauses</h3>
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="section__content">
+                      <p class="mb-30 text-sm">Ein Wohnbau-Unternehmen hat heute ein neues Reihenhausprojekt in München-Allach vorgestellt. Das Projekt umfasst sechs moderne und hochwertig ausgestattete Reihenhäuser, die Platz für Familien und Paare bieten. Jedes Haus verfügt über eine Wohnfläche von ca. 120 m² und bietet somit genügend Raum für ein gemütliches Wohngefühl. </p>
+                      <p class="mb-0 text-sm">
+                          Die Reihenhäuser sind so konzipiert, dass sie höchsten Wohnkomfort bieten und zugleich modernen Standards entsprechen. Die großzügigen Fensterflächen sorgen für viel Tageslicht und schaffen eine helle und freundliche Atmosphäre. Die offene Küche und der geräumige Wohnbereich bilden das Herzstück des Hauses und bieten genügend Platz für gemeinsame Aktivitäten mit der Familie oder Freunden.
+                      </p>
+                    </div>
+                </div>
+                <div class="col-lg-2 d-flex justify-content-lg-center">
+                    <address>
+                        <p class="mb-30">
+                            <span><img src="assets/images/date-icon.svg" alt=""> </span>
+                            <span class="text-accent text-xsm font-zen line-h-sm ps-1">06.03.2023</span>
+                        </p>
+                        <p class="mb-30">
+                          <span><img src="assets/images/comment-icon.svg" alt=""> </span>
+                            <span class="text-accent text-xsm font-zen line-h-sm ps-1">Bautenstand</span>
+                        </p>
+                        <p>
+                          <span><img src="assets/images/map-icon.svg" alt=""> </span>
+                            <span class="text-accent text-xsm font-zen line-h-sm ps-1">München-Allach</span>
+                        </p>
+                    </address>
+                </div>
+            </div>
+            <div class="row block-margin" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-12">
+                    <img src="assets/images/project-detail-img.png" alt="" class="img-fluid min-h-sm object-cover ">
+                </div>
+            </div>
+            <div class="row block-margin" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-lg-6">
+                    <div class="section__content">
+                      <p class="mb-30 text-sm">
+                          Auch im Obergeschoss bleiben keine Wünsche offen. Hier befinden sich zwei bis drei Schlafzimmer und ein großzügiges Badezimmer. Der Dachboden bietet zusätzlichen Stauraum oder kann auch als weiteres Zimmer genutzt werden
+                      </p>
+                      <p class="mb-30 text-sm">                          Die Lage des Reihenhausprojekts ist einfach unschlagbar: München-Allach ist ein beliebter Stadtteil, der mit seiner perfekten Infrastruktur, zahlreichen Einkaufsmöglichkeiten und einem breiten Freizeitangebot überzeugt. Die S-Bahn-Station ist nur wenige Gehminuten entfernt und bringt Sie in nur 20 Minuten in die Münchner Innenstadt.
+                      </p>
+                      <p class="mb-0 text-sm">
+                          Das Reihenhausprojekt bietet somit eine perfekte Kombination aus modernem Wohnkomfort und einer attraktiven Lage.
+                      </p>
+                      <p class="text-xsm mb-0 block-margin">Beitrag teilen auf:</p>
+                      <ul class="social-list list-unstyled d-flex gap-2">
+                          <li class="list__item"><a href="#" class="list__link">
+                              <img src="assets/images/social-icon-1.svg" alt="">
+                          </a></li>
+                          <li class="list__item"><a href="#" class="list__link">
+                              <img src="assets/images/social-icon-2.svg" alt="">
+                          </a></li>
+                          <li class="list__item"><a href="#" class="list__link">
+                              <img src="assets/images/social-icon-3.svg" alt="">
+                          </a></li>
+                      </ul>
+                      <a href="#" class="text-xsm mb-0 font-zen block-margin d-block text-primary link fw-medium">zurück zur News Übersicht</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- project detail end -->
+
+       <!-- contact section start -->
+       <section class="contact">
+        <div class="contact__label-container">
+          <p class="contact__label label-sticky">KONTAKT</p>
+        </div>
+        <div class="container custom-container">
+          <div class="row flex-wrap-reverse">
+            <div class="col-lg-6">
+              <form class="contact-form">
+                <div
+                  class="mb-4 pt-lg-4 pt-3"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="100"
+                >
+                  <label for="username" class="form-label">
+                    <span>01</span> Ihr Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="username"
+                    placeholder="Max Mustermann *"
+                  />
+                </div>
+                <div
+                  class="mb-4"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="100"
+                >
+                  <label for="email" class="form-label">
+                    <span>02</span> Ihr E-Mail</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="max@mustermann.de *"
+                  />
+                </div>
+                <div
+                  class="mb-4"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="100"
+                >
+                  <label for="telephone" class="form-label">
+                    <span>03</span> Ihre Telefonnummer</label
+                  >
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="telephone"
+                    placeholder="123 456 789 01"
+                  />
+                </div>
+                <div
+                  class="mb-4"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="100"
+                >
+                  <label for="textarea" class="form-label"
+                    ><span>04</span> Ihre Nachricht</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="textarea"
+                    rows="4"
+                    placeholder="Hallo, ich habe eine Frage bezüglich... *"
+                  ></textarea>
+                </div>
+                <div
+                  class="mb-4 form-check ps-0"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="100"
+                >
+                  <input
+                    type="radio"
+                    class="form-radio"
+                    id="form-check"
+                  />
+                  <label class="form-check-label" for="form-check"
+                    >Ja, ich habe die Datenschutzerklärung gelesen und bin damit
+                    einverstanden.</label
+                  >
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn btn-outline-light"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="100"
+                >
+                  Nachricht senden
+                </button>
+              </form>
+            </div>
+            <div class="col-lg-6 d-lg-flex d-xxl-block mb-5">
+              <div
+                class="contact__content"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+              >
+                <h2 class="contact__title">
+                  Sie haben Fragen?
+                  <span class="d-block">Wir helfen gerne weiter.</span>
+                </h2>
+
+                <div
+                  class="contact__links"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="100"
+                >
+                  <p class="contact__text">Kontakt</p>
+                  <div>
+                    <a href="mailto:info@suwohnbau.de" class="contact-link"
+                      >info@suwohnbau.de</a
+                    >
+                    <a href="tel:089-244-126-520" class="contact-link"
+                      >089/244 126 520</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="contact__address"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="100"
+                >
+                  <p class="contact__text">Adresse</p>
+                  <p>
+                    SU Wohnabau GmbH <br />Fraunhoferstraße 36 <br />
+                    80469 München
+                  </p>
+                </div>
+
+                <div
+                  class="contact__social-links"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="100"
+                >
+                  <p class="contact__text">Social Media</p>
+                  <a href="#" class="social-link">
+                    <img
+                      src="assets/images/instagram.svg"
+                      alt="instagram icon"
+                      class="social-link-icon"
+                    />
+                  </a>
+                  <a href="#" class="social-link">
+                    <img
+                      src="assets/images/linkedin.svg"
+                      alt="linkedin icon"
+                      class="social-link-icon"
+                    />
+                  </a>
+                  <a href="#" class="social-link">
+                    <img
+                      src="assets/images/social-icon.svg"
+                      alt="app icon"
+                      class="social-link-icon"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact section end -->
+    </main>
+    <!-- footer section start -->
+    <footer class="footer">
+      <div class="container custom-container footer-content">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="footer-content-container">
+              <p class="footer__text">2023 &commat; SU Wohnabu</p>
+              <div class="footer__links">
+                <a href="#" class="footer-link">Impressum</a>
+                <a href="#" class="footer-link">Datenschutz</a>
+                <a href="#" class="footer-link">Rechtliche Hinweise</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section end -->
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- swiper js file -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- aos js file -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- custom js file -->
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

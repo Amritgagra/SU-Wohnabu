@@ -1,0 +1,61 @@
+@import './variables';
+@import './mixins';
+@import './typography';
+@import './global';
+
+@media screen and (min-width: 1800px){
+    .container {
+        max-width: 1760px;
+    }
+}
+
+@media screen and (min-width: 1600px){
+    .container.custom-container {
+        max-width: 1560px;
+    }
+}
+
+.container{
+    @include mq(sm){
+        padding-inline: 20px !important;
+    }
+}
+
+
+.btn-outline-dark,
+.btn-outline-light
+{
+    padding: 17px 32px;
+    border-radius: 22px;
+    font-size: 18px;
+    line-height: 26px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-weight: 500;
+    @include mq(xxxl){
+        padding: 10px 30px;
+        border-radius: 22px;
+        line-height: 30px;
+     }
+     @include mq(lg){
+        padding: 12px 30px;
+        border-radius: 20px;
+        font-size: 15px;
+      }
+}
+
+.btn-outline-dark{
+    border: 1px solid $clr-primary;
+    &:hover,&:focus{
+        background-color: $clr-primary;
+        color: $clr-white;
+    }
+}
+
+.btn-outline-light{
+    &:hover,&:focus{
+        background-color: $clr-primary;
+        border: 1px solid $clr-primary;
+        color: $clr-white;
+    }
+}
+

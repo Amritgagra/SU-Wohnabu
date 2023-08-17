@@ -1,0 +1,89 @@
+@import './variables';
+@import './mixins';
+.principle__slider {
+    .swiper-button-prev,
+    .swiper-button-next {
+        top: 70%;
+        opacity: 1;
+        width: 62px;
+        height: 62px;
+        border: 1px solid $clr-primary;
+        border-radius: 22px;
+        color: $clr-primary;
+        transition: all .3s ease-in-out;
+        pointer-events: initial;
+        cursor: pointer;
+        &:hover {
+          background: $clr-primary;
+          color: $clr-white;
+        }
+         @include mq(lg) {
+          top: 85%;
+          }
+        @include mq(md) {
+          width: 50px;
+          height: 50px;
+          border-radius: 14px;
+          }
+    }
+    .swiper-button-prev {
+        left: 0;
+    }
+    .swiper-button-next {
+        right: 73%;
+
+        @include mq(lg) {
+          right: 0;
+        }
+    }
+    .swiper-scrollbar  {
+        opacity: 1 !important;
+        background: #ECDFCA;
+        height: 3px;
+      }
+      .swiper-scrollbar-drag {
+       background: $clr-accent;
+      }
+      .swiper-button-next:after,
+      .swiper-button-prev:after {
+       font-size: 15px;
+       font-weight: 700;
+      }
+      &-img {
+        max-width: 710px;
+        height: 100%;
+        object-fit: cover;
+        @include mq(lg) {
+          max-width: 100%;
+          }
+      }
+      .swiper-slide {
+        height: auto;
+      }
+
+      &--sm {
+        .swiper-slide {
+          @include mq(lg) {
+          padding-bottom: 180px;
+          }
+        }
+      }
+      &--img {
+        .swiper-slide {
+          display: flex;
+          justify-content: flex-end;
+          @include mq(lg) {
+            justify-content: flex-start;
+            }
+        }
+      }
+}
+
+
+.principle__content {
+  max-width: 710px;
+}
+
+.teams-img-slider .swiper-slide {
+  height: auto;
+}

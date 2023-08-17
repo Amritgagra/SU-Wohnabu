@@ -1,0 +1,190 @@
+@import '../variables';
+@import '../mixins';
+.projects{
+    padding-block: 214px;
+    position: relative;
+    @include mq(xl){
+        padding-block: 100px;
+    }
+   
+     
+    .project{
+        background:linear-gradient(to left, rgba(0,0,0,.3),rgba(0,0,0,.3)), url(../images/home/project-img-1.png) no-repeat center;
+        background-size:cover;
+        height: 691px;
+        margin-bottom: 140px;
+        padding: 100px;
+        display: flex;
+        justify-content: space-between;       
+        &__label{
+            position: absolute;
+            left: 47px;
+            transform: rotate(270deg);
+            top: 22px;
+            font-size: 18px;  
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+            font-weight: 500;
+            @include mq(xxxl){
+                left: -30px;
+            }
+            @include mq(xl){
+                left: -30px;
+                font-size: 14px; 
+            }
+            &-container{
+                position: sticky;
+                top: 130px;
+                margin-block: 80px;
+                @include mq(md){
+                    display: none;
+                 }
+            }
+        }
+        &-wrapper{
+            @media screen and (min-width:768px){    
+                overflow-y: auto;
+                max-height: 100vh;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+        }
+        @include mq(xxxl){
+            margin-bottom: 100px;
+         }
+         @include mq(xl){
+            height: 543px;
+            padding: 50px;
+          }
+         @include mq(lg){
+            margin-bottom: 50px;
+            padding: 40px 10px;
+          }
+        
+        &--two{
+            background: linear-gradient(to left, rgba(0,0,0,.1),rgba(0,0,0,.1)), url(../images/home/project-img-2.png) no-repeat center; 
+        }
+        &--three{
+            background: linear-gradient(to left, rgba(0,0,0,.1),rgba(0,0,0,.1)), url(../images/home/project-img-3.png) no-repeat center; 
+        }
+        &--four{
+            background: linear-gradient(to left, rgba(0,0,0,.1),rgba(0,0,0,.1)), url(../images/home/project-img-4.png) no-repeat center; 
+        }
+        &--five{
+            background: linear-gradient(to left, rgba(0,0,0,.1),rgba(0,0,0,.1)), url(../images/home/project-img-5.png) no-repeat center; 
+        }
+        &__content{
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-end;
+
+            p {
+                font-size: 18px;
+                font-family: 'Zen Kaku Gothic Antique', sans-serif;
+                font-weight: 400;
+                line-height: 26px;
+                color: $clr-white;
+                margin: 0;
+                @include mq(lg){
+                    font-size: 15px;
+                 }
+            }
+            &-title{
+                margin-bottom: 0;
+                color: $clr-white;
+                @include mq(lg){
+                  font-size: 18px;
+                 }
+            }
+           
+            .btn{
+                margin-top: 30px;
+                @include mq(lg){
+                    margin-top: 20px;
+                 }
+            }
+        }
+        .badge__content{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+    }
+}
+.badge-accent{
+    background: $clr-accent;
+    margin-bottom: 0;
+    padding: 18px 47px;
+    border-radius: 22px;
+    font-size: 18px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-weight: 500;
+    line-height: 26px;
+    color: $clr-white;
+    @include mq(xxxl){
+    padding: 10px 30px;
+    border-radius: 16px;
+    font-size: 16px;
+    }
+    @include mq(md){
+        padding: 13px 43px;
+        font-size: 15px;
+        line-height:30px;
+    }
+}
+.project-sr{
+    align-self: end;
+    font-size: 30px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-weight: 500;
+    line-height: 44px;
+    color: $clr-white;
+    margin-bottom: 0;
+    @include mq(xxxl){
+        font-size: 30px;
+    }
+    @include mq(lg){
+        font-size: 18px;
+    }
+}
+.project__content-text{
+    position: relative;
+    &::before{
+        content: '';
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        left: -4px;
+        background: url(../images/project-icon.svg) no-repeat center;
+        background-size: contain;
+        position: relative;
+    }
+}
+
+.project-detail-content-wrapper {
+    position: relative;
+    &::before {
+        content:'';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url(../images/logo-bg.png) no-repeat center;
+        background-size: contain;
+        mix-blend-mode: multiply;
+        z-index: -1;
+    }
+}
+
+.project-cards  {
+    @include mq(lg) {
+        img.img-fluid {
+            width: 100%;
+            object-fit: cover;
+        }
+     }
+}

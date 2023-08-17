@@ -1,0 +1,99 @@
+.principle__slider .swiper-button-prev,
+.principle__slider .swiper-button-next {
+  top: 70%;
+  opacity: 1;
+  width: 62px;
+  height: 62px;
+  border: 1px solid #071825;
+  border-radius: 22px;
+  color: #071825;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  pointer-events: initial;
+  cursor: pointer;
+}
+.principle__slider .swiper-button-prev:hover,
+.principle__slider .swiper-button-next:hover {
+  background: #071825;
+  color: #fff;
+}
+@media screen and (max-width: 992px) {
+  .principle__slider .swiper-button-prev,
+  .principle__slider .swiper-button-next {
+    top: 85%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .principle__slider .swiper-button-prev,
+  .principle__slider .swiper-button-next {
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+  }
+}
+.principle__slider .swiper-button-prev {
+  left: 0;
+}
+.principle__slider .swiper-button-next {
+  right: 73%;
+}
+@media screen and (max-width: 992px) {
+  .principle__slider .swiper-button-next {
+    right: 0;
+  }
+}
+.principle__slider .swiper-scrollbar {
+  opacity: 1 !important;
+  background: #ECDFCA;
+  height: 3px;
+}
+.principle__slider .swiper-scrollbar-drag {
+  background: #BA7912;
+}
+.principle__slider .swiper-button-next:after,
+.principle__slider .swiper-button-prev:after {
+  font-size: 15px;
+  font-weight: 700;
+}
+.principle__slider-img {
+  max-width: 710px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 992px) {
+  .principle__slider-img {
+    max-width: 100%;
+  }
+}
+.principle__slider .swiper-slide {
+  height: auto;
+}
+@media screen and (max-width: 992px) {
+  .principle__slider--sm .swiper-slide {
+    padding-bottom: 180px;
+  }
+}
+.principle__slider--img .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+@media screen and (max-width: 992px) {
+  .principle__slider--img .swiper-slide {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.principle__content {
+  max-width: 710px;
+}
+
+.teams-img-slider .swiper-slide {
+  height: auto;
+}/*# sourceMappingURL=slider.css.map */

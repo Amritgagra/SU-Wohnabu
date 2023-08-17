@@ -1,0 +1,100 @@
+@import '../variables';
+@import '../mixins';
+.purchase{
+    padding-block: 100px 273px;
+    background: $clr-light-gray;
+    position: relative;
+    @include mq(xxxl){
+        padding-block: 100px 153px;
+    }
+    @include mq(lg){
+        padding-block: 90px 133px;
+    }
+    &__label{
+        position: absolute;
+        left: 56px;
+        transform: rotate(270deg);
+        top: 50px;
+        font-size: 18px;  
+        font-family: 'Zen Kaku Gothic Antique', sans-serif;
+        font-weight: 500;
+        @include mq(xxxl){
+            left: -30px;
+        }
+        @include mq(xl){
+            left: -30px;
+            font-size: 14px; 
+        }
+        &-container{
+            position: sticky;
+            top: 130px;
+            margin-block: 80px;
+            @include mq(md){
+                display: none;
+             }
+        }
+    }
+    &__content{
+        max-width: 710px;
+    }
+    &__content-title{
+        color: $clr-black;
+        margin-bottom: 46px;
+        max-width: 623px;
+    }
+    &__content-text{
+        margin-bottom: 70px;
+        @include mq(md){
+            font-size: 16px !important;
+            line-height: 28px;
+         }
+    }
+}
+.buy-img {
+    min-height: 734px;
+    max-width: 710px;
+    @include mq(xxxl){
+        min-height: 400px;
+        max-width: 100%;
+     }
+}
+
+.purchase-profile-cols {
+    grid-template-columns: 1fr 692px;
+    @include mq(xxxl){
+        grid-template-columns: 1fr .5fr;
+     }
+    @include mq(lg){
+        grid-template-columns: 1fr auto;
+     }
+}
+
+.purchase-profile__content {
+    margin: 95px;
+    max-width: 830px;
+    @include mq(xxl){
+        margin: 100px 30px;
+     }
+    @include mq(lg){
+        margin:100px 20px;
+     }
+}
+
+.purchase-profile  {
+    .list__item {
+        gap: 40px;
+        @include mq(xxl){
+            margin-bottom: 20px;
+         }
+        @include mq(xxl){
+            gap: 10px;
+         }
+        @include mq(lg){
+            gap: 20px;
+         }
+        &-nested {
+            display: flex;
+            gap: 2px;
+        }
+    }
+}

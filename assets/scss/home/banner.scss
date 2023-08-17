@@ -1,0 +1,114 @@
+@import '../variables';
+@import '../mixins';
+.banner{
+    background:linear-gradient(to left, rgba(0,0,0,.3),rgba(0,0,0,.3)), url(../images/home/banner--home.png) no-repeat center;
+    background-size: cover;
+    min-height: 117vh;
+    border-radius: 0;
+    position: relative;
+    z-index: 3;
+    @include mq(xxl){
+      min-height: 100vh;
+    }
+    @include mq(md){
+      min-height: 144vh;
+    }
+    &__content{
+      position: sticky;
+      top: 20%;
+      z-index: 4;
+      padding-bottom: 350px;
+      @include mq(lg){
+        padding-bottom: 380px;
+      }
+      @include mq(sm){
+        top: 20%;
+        padding-bottom: 300px;
+      }
+      &.active{
+        .banner__title{
+          color: $clr-black;
+        }
+      }
+    }
+
+    &__title{
+        color: $clr-white;
+        display: flex;
+        justify-content: center;
+        transition: all .2s linear;
+        line-height: 80px;
+        @include mq(md){
+          line-height: 50px;
+        }
+    }
+    .scroll-btn-container{
+        width :34px;
+        height: 55px;
+        position: absolute;
+        bottom: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+        &.bottom-sm {
+          bottom: 40px;
+        }
+        .scroll-text{
+            font-size: 18px;
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+            color: $clr-white;
+            line-height: 26px;
+            font-weight: 500;
+        }
+        .mouse {
+            width: 3px;
+            padding: 10px 15px;
+            height: 35px;
+            border: 2px solid #fff;
+            border-radius: 25px;
+            opacity: 0.75;
+            box-sizing: content-box;
+          }
+          .scroller {
+            width: 3px;
+            height: 10px;
+            border-radius: 25%;
+            background-color: #fff;
+            animation: scroll 1s linear infinite alternate;
+          }
+          @keyframes scroll {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(20px);}
+          }
+    }
+
+    &--about-us {
+      background:linear-gradient(to left, rgba($color: $clr-primary, $alpha: .1),rgba($color: $clr-primary, $alpha: .1)), url(../images/about-us/banner--about.png) no-repeat center;
+      background-size: cover;
+    }
+    &--project {
+      background:linear-gradient(to left,rgba($color: $clr-primary, $alpha: .1),rgba($color: $clr-primary, $alpha: .1)), url(../images/project-bg.png) no-repeat center;
+      background-size: cover;
+    }
+    &--project-detail {
+      background:linear-gradient(to left,rgba($color: $clr-primary, $alpha: .1),rgba($color: $clr-primary, $alpha: .1)), url(../images/project-detail-bg.png) no-repeat center;
+      background-size: cover;
+    }
+    &--news {
+      background:linear-gradient(to left,rgba($color: $clr-primary, $alpha: .1),rgba($color: $clr-primary, $alpha: .1)), url(../images/news-bg.png) no-repeat center;
+      background-size: cover;
+    }
+    &--news-detail {
+      background:linear-gradient(to left,rgba($color: $clr-primary, $alpha: .1),rgba($color: $clr-primary, $alpha: .1)), url(../images/news-detail-bg.png) no-repeat center;
+      background-size: cover;
+    }
+    &--purchase {
+      background:linear-gradient(to left,rgba($color: $clr-primary, $alpha: .1),rgba($color: $clr-primary, $alpha: .1)), url(../images/purchase-bg.png) no-repeat center;
+      background-size: cover;
+    }
+}
+
+.custom-wrapper{
+  margin-top: -905px;
+}
+

@@ -1,0 +1,201 @@
+@import '../variables';
+@import '../mixins';
+.contact{
+    background: $clr-primary;
+    padding-block:150px 170px;
+    color: $clr-white;
+    margin-top: -30px;
+    position: relative;
+    @include mq(xxxl){
+        padding-block:80px;
+    }
+    @include mq(xl){
+        padding-block:80px;
+    }
+    @include mq(lg){
+        padding-block:85px 130px;
+    }
+    &__label{
+        position: absolute;
+        left: 50px;
+        transform: rotate(270deg);
+        top: 36px;
+        font-size: 18px;  
+        font-family: 'Zen Kaku Gothic Antique', sans-serif;
+        font-weight: 500;
+        @include mq(xxxl){
+            left: -30px;
+        }
+        @include mq(xl){
+            left: -30px;
+            font-size: 14px; 
+        }
+        &-container{
+            position: sticky;
+            top: 130px;
+            @include mq(md){
+                display: none;
+             }
+        }
+    }
+    &__content{
+        max-width: 623px;
+        margin: 0 auto;
+    }
+
+
+    &-form{
+        border-top: 1px solid $clr-gray-text;
+        max-width: 710px;
+        .form-label,
+        .form-check-label
+        {
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 400;
+            color: #BFBBB2;
+            margin-bottom: 0;
+            @include mq(lg){
+                font-size: 15px;
+                line-height: 30px;
+                font-weight: 400;
+             }
+        }
+        .form-check-label{
+            line-height: 30px;
+            color: $clr-gray-text;
+            padding-left: 6px;
+        }
+        .form-label{
+            display: flex;
+            gap: 25px;
+        }
+
+        .form-control{
+            background: transparent;
+            border: 0;
+            border-bottom: 1px solid $clr-gray-text;
+            border-radius: 0;
+            margin-bottom: 0px;
+            padding-bottom: 20px;
+            padding-left: 40px;
+            color: $clr-white;
+            font-size: 22px;
+            font-family: "bigcity-grotesque-pro", sans-serif;
+            line-height: 40px;
+            font-weight: 400;
+            color: $clr-white;
+            @include mq(lg){
+                padding-bottom: 10px;
+                line-height: 30px;
+                font-size: 18px;
+             }
+            &:focus{
+                box-shadow: none;
+                border-color: $clr-accent;
+            }
+          
+            &::placeholder{
+                font-size: 22px;
+                font-family: "bigcity-grotesque-pro", sans-serif;
+                line-height: 40px;
+                font-weight: 400;
+                color: $clr-white;
+                @include mq(lg){
+                    font-size: 18px;
+                 }
+            }
+        }
+
+        .btn {
+            margin-top: 10px;
+        }
+        textarea{
+            resize: none;
+        }
+    }
+
+    &__title{
+        font-size: 30px;
+        line-height: 45px;
+        margin-bottom: 60px;
+        color: $clr-white;
+
+        @include mq(lg){
+            font-size: 22px;
+            line-height: 32px;
+         }
+    }
+
+    &__social-links,
+    &__links,
+    &__address{
+        .contact__text{
+            font-size: 18px;
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+            font-weight: 400;
+            line-height: 55px;
+            color:$clr-accent;
+            margin-bottom: 0;
+            @include mq(md){
+                font-size: 15px;
+             }
+        }
+        p:not(.contact__text) {
+            font-size: 22px;
+            @include mq(md){
+                font-size: 18px;
+             }
+        }
+    }
+    &__social-links,
+    &__links,
+    &__address{
+        margin-bottom: 30px;
+        @include mq(md){
+            margin-bottom: 15px;
+         }
+    }
+
+    &-link{
+        display: block;
+        color: $clr-white;
+        text-decoration: none;
+        font-size: 22px;
+        @include mq(md){
+            font-size: 18px;
+         }
+        &:focus,&:hover{
+            color: $clr-white;
+        }
+        &:active{
+            color: $clr-white;
+        }
+    }
+
+    .social-link{
+        text-decoration: none;
+        & + .social-link {
+            margin-left: 10px;
+        }
+    }
+    .btn-outline-light{
+        &:hover,&:focus{
+            background-color: $clr-white;
+            border: 1px solid $clr-white;
+            color: $clr-primary;
+        }
+    }
+
+    .form-radio {
+        width: 20px;
+        height: 20px;
+        accent-color: $clr-primary;
+        position: relative;
+        top: 3px;
+    }
+
+
+    
+}

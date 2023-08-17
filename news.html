@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEWS</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap css file -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- swiper css file -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- aos css file -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- custom css file -->
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/banner.css" />
+    <link rel="stylesheet" href="assets/css/about-us.css" />
+    <link rel="stylesheet" href="assets/css/projects.css" />
+    <link rel="stylesheet" href="assets/css/news.css" />
+    <link rel="stylesheet" href="assets/css/purchase.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/slider.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body class="bg__light">
+    <!-- header start -->
+    <header class="header header--active">
+      <nav class="navbar">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/images/logo.svg" alt="site logo" class="logo" />
+              <img
+                src="assets/images/logo-scroll.svg"
+                alt="site logo"
+                class="logo-scroll"
+              />
+              <img
+                src="assets/images/logo--light.svg"
+                alt="site logo"
+                class="logo--light"
+              />
+            </a>
+            <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar">
+              <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="22"
+              viewBox="0 0 32 22"
+              class="ham-white"
+            >
+              <g
+                id="Gruppe_313"
+                data-name="Gruppe 313"
+                transform="translate(-3816.328 -4491.226)"
+              >
+                <rect
+                  id="Rechteck_47"
+                  data-name="Rechteck 47"
+                  width="32"
+                  height="2"
+                  rx="1"
+                  transform="translate(3816.328 4491.226)"
+                  fill="#fff"
+                />
+                <rect
+                  id="Rechteck_48"
+                  data-name="Rechteck 48"
+                  width="32"
+                  height="2"
+                  rx="1"
+                  transform="translate(3816.328 4501.226)"
+                  fill="#fff"
+                />
+                <rect
+                  id="Rechteck_49"
+                  data-name="Rechteck 49"
+                  width="32"
+                  height="2"
+                  rx="1"
+                  transform="translate(3816.328 4511.226)"
+                  fill="#fff"
+                />
+              </g>
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="22"
+              viewBox="0 0 32 22"
+              class="ham-primary"
+            >
+              <g
+                id="Gruppe_313"
+                data-name="Gruppe 313"
+                transform="translate(-3816.328 -4491.226)"
+              >
+                <rect
+                  id="Rechteck_47"
+                  data-name="Rechteck 47"
+                  width="32"
+                  height="2"
+                  rx="1"
+                  transform="translate(3816.328 4491.226)"
+                  fill="#071825"
+                />
+                <rect
+                  id="Rechteck_48"
+                  data-name="Rechteck 48"
+                  width="32"
+                  height="2"
+                  rx="1"
+                  transform="translate(3816.328 4501.226)"
+                  fill="#071825"
+                />
+                <rect
+                  id="Rechteck_49"
+                  data-name="Rechteck 49"
+                  width="32"
+                  height="2"
+                  rx="1"
+                  transform="translate(3816.328 4511.226)"
+                  fill="#071825"
+                />
+              </g>
+            </svg>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header justify-content-end pe-0 mb-50">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body flex-column flex-lg-row-reverse">
+                <ul class="navbar-nav justify-content-lg-end align-items-lg-end flex-grow-1">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="index.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  href="about-us.html"
+                      >Über uns</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  href="projects.html"
+                      >Projekte</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active"  href="news.html"
+                      >News</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  href="purchase.html">Ankauf</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  href="contact.html">Kontakt</a>
+                  </li>
+                </ul>
+                
+                <div class="contact-info">
+                  <div class="contact__links">
+                    <p class="contact__text text-accent">Kontakt</p>
+                    <div>
+                      <a href="mailto:info@suwohnbau.de" class="contact-link"
+                        >info@suwohnbau.de</a
+                      >
+                      <a href="tel:089-244-126-520" class="contact-link"
+                        >089/244 126 520</a
+                      >
+                    </div>
+                  </div>
+                  <div class="contact__address">
+                    <p class="contact__text text-accent">Adresse</p>
+                    <p class="text-white mb-0">
+                      SU Wohnabau GmbH <br />Fraunhoferstraße 36 <br />
+                      80469 München
+                    </p>
+                  </div>
+                  <div
+                  class="contact__social-links"
+                >
+                  <p class="contact__text text-accent">Social Media</p>
+                  <a href="#" class="social-link">
+                    <img
+                      src="assets/images/instagram.svg"
+                      alt="instagram icon"
+                      class="social-link-icon"
+                    />
+                  </a>
+                  <a href="#" class="social-link">
+                    <img
+                      src="assets/images/linkedin.svg"
+                      alt="linkedin icon"
+                      class="social-link-icon"
+                    />
+                  </a>
+                  <a href="#" class="social-link">
+                    <img
+                      src="assets/images/social-icon.svg"
+                      alt="app icon"
+                      class="social-link-icon"
+                    />
+                  </a>
+                </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- header end -->
+    <main>
+
+        <!-- banner section start -->
+        <section class="banner min-h-md banner--news -m-top">
+          <div class="container custom-container min-h-inherit">
+            <div class="row min-h-inherit">
+                <div class="col-lg-6 d-flex flex-column justify-content-start align-items-start">
+                    <h1 class="banner__title section-title">
+                        NEWS
+                  </h1></div>
+            </div>
+          </div>
+          <div class="scroll-btn-container bottom-sm">
+            <div class="mouse">
+              <div class="scroller"></div>
+            </div>
+            <p class="scroll-text d-none">scroll</p>
+          </div>
+        </section>
+        <!-- banner section end -->
+
+        <!-- about-us section start -->
+        <section class="about-us block-padding-xl mt-0">
+          <div class="container custom-container">
+            <div class="row">
+              <div class="col-12  px-xxl-0">
+                <div
+                  class="about-us__content"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                >
+                  <div class="about-us__label-container">
+                    <p class="about-us__label news-label">NEWS</p>
+                  </div>
+                  <h2 class="text-uppercase section-title-lg line-h-70">NEUE <span class="text-accent">WOHNPROJEKTE</span> UND <span class="text-accent">ENTWICKLUNGEN.</span>
+                    <span class="d-xxl-block">ERFAHREN SIE ALLES ÜBER</span>
+                    UNSERE <span class="text-accent">AKTUELLEN BAUPROJEKTE</span>
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- about-us section end -->
+      </div>
+
+      <!-- news category section start -->
+      <section class="news-category block-margin">
+        <div class="container custom-container">
+            <div class="row">
+                <div class="col-12 px-xxl-0" data-aos="fade-up" data-aos-duration="1000">
+                        <!-- news tabs -->
+                        <p class="text-xsm font-zen">Kategorien filtern:</p>
+                        <ul class="nav nav-tabs border-0 mb-70" id="myTab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">Alle Kategorien</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="construction-tab" data-bs-toggle="tab" data-bs-target="#construction" type="button" role="tab" aria-controls="       construction" aria-selected="false">Bautenstand</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="building-tab" data-bs-toggle="tab" data-bs-target="#building" type="button" role="tab" aria-controls="building" aria-selected="false">Baugenehmigungen</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="real-estate-tab" data-bs-toggle="tab" data-bs-target="#real-estate" type="button" role="tab" aria-controls="real-estate" aria-selected="false">Immobranche</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="culture-tab" data-bs-toggle="tab" data-bs-target="#culture" type="button" role="tab" aria-controls="culture" aria-selected="false">Kultur</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="projects" data-bs-toggle="tab" data-bs-target="#projects" type="button" role="tab" aria-controls="projects" aria-selected="false">Neueste Projekte</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="enterprise-tab" data-bs-toggle="tab" data-bs-target="#enterprise" type="button" role="tab" aria-controls="enterprise" aria-selected="false">Unternehmen</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="economy-tab" data-bs-toggle="tab" data-bs-target="#economy" type="button" role="tab" aria-controls="economy" aria-selected="false">Wirtschaft</button>
+                          </li>
+                        </ul>
+                        
+                        <!-- news content -->
+                        <div class="tab-content">
+                          <div class="tab-pane active" id="all" role="tabpanel" aria-labelledby="all"> 
+                            <div class="row news mb-0" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="col-lg-4 col-sm-6 mb-50">
+                                    <div class="card ">
+                                        <img
+                                          src="assets/images/home/slider-img-1.png"
+                                          class=" "
+                                          alt="swiper slider img"
+                                        />
+                                        <div class="card-body">
+                                          <p class="text-accent text-xsm mb-0">Bautenstand</p>
+                                          <h5 class="card-title">Projektstart eines Reihenhauses</h5>
+                                          <p class="card-text text-accent text-xsm">München-Allach</p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 mb-50">
+                                    <div class="card ">
+                                        <img
+                                          src="assets/images/home/slider-img-2.png"
+                                          class=" "
+                                          alt="swiper slider img"
+                                        />
+                                        <div class="card-body">
+                                          <p class="text-accent text-xsm mb-0">Baugenehmigungen</p>
+                                          <h5 class="card-title">Das neue Mehrfamilienhauses</h5>
+                                          <p class="card-text text-accent text-xsm">München-Nymphenburg</p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 mb-50">
+                                    <div class="card ">
+                                        <img
+                                          src="assets/images/home/slider-img-3.png"
+                                          class=" "
+                                          alt="swiper slider img"
+                                        />
+                                        <div class="card-body">
+                                          <p class="text-accent text-xsm mb-0">Wirtschaft</p>
+                                          <h5 class="card-title">Der moderne Städtebau</h5>
+                                          <p class="card-text text-accent text-xsm">München-Maxvorstadt</p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 mb-50">
+                                    <div class="card ">
+                                        <img
+                                          src="assets/images/home/slider-img-4.png"
+                                          class=" "
+                                          alt="swiper slider img"
+                                        />
+                                        <div class="card-body">
+                                          <p class="text-accent text-xsm mb-0">Wirtschaft</p>
+                                          <h5 class="card-title">Nachhaltiges Wohnen</h5>
+                                          <p class="card-text text-accent text-xsm">Nachhaltiges Wohnen</p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 mb-50">
+                                    <div class="card ">
+                                        <img
+                                          src="assets/images/home/slider-img-5.png"
+                                          class=" "
+                                          alt="swiper slider img"
+                                        />
+                                        <div class="card-body">
+                                          <p class="text-accent text-xsm mb-0">Immobranche</p>
+                                          <h5 class="card-title">Unsere neue Webseite</h5>
+                                          <p class="card-text text-accent text-xsm">München-Pasing</p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 mb-50">
+                                    <div class="card ">
+                                        <img
+                                          src="assets/images/home/slider-img-3.png"
+                                          class=" "
+                                          alt="swiper slider img"
+                                        />
+                                        <div class="card-body">
+                                          <p class="text-accent text-xsm mb-0">Wirtschaft</p>
+                                          <h5 class="card-title">Der moderne Städtebau</h5>
+                                          <p class="card-text text-accent text-xsm">München-Maxvorstadt</p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 mb-50">
+                                    <div class="card ">
+                                        <img
+                                          src="assets/images/home/slider-img-1.png"
+                                          class=" "
+                                          alt="swiper slider img"
+                                        />
+                                        <div class="card-body">
+                                          <p class="text-accent text-xsm mb-0">Bautenstand</p>
+                                          <h5 class="card-title">Projektstart eines Reihenhauses</h5>
+                                          <p class="card-text text-accent text-xsm">München-Allach</p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 mb-50">
+                                    <div class="card ">
+                                        <img
+                                          src="assets/images/home/slider-img-2.png"
+                                          class=" "
+                                          alt="swiper slider img"
+                                        />
+                                        <div class="card-body">
+                                          <p class="text-accent text-xsm mb-0">Baugenehmigungen</p>
+                                          <h5 class="card-title">Das neue Mehrfamilienhauses</h5>
+                                          <p class="card-text text-accent text-xsm">München-Nymphenburg</p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 mb-50">
+                                    <div class="card ">
+                                        <img
+                                          src="assets/images/home/slider-img-3.png"
+                                          class=" "
+                                          alt="swiper slider img"
+                                        />
+                                        <div class="card-body">
+                                          <p class="text-accent text-xsm mb-0">Wirtschaft</p>
+                                          <h5 class="card-title">Der moderne Städtebau</h5>
+                                          <p class="card-text text-accent text-xsm">München-Maxvorstadt</p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 mb-50">
+                                    <div class="card ">
+                                        <img
+                                          src="assets/images/home/slider-img-4.png"
+                                          class=" "
+                                          alt="swiper slider img"
+                                        />
+                                        <div class="card-body">
+                                          <p class="text-accent text-xsm mb-0">Wirtschaft</p>
+                                          <h5 class="card-title">Nachhaltiges Wohnen</h5>
+                                          <p class="card-text text-accent text-xsm">Nachhaltiges Wohnen</p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 mb-50">
+                                    <div class="card ">
+                                        <img
+                                          src="assets/images/home/slider-img-5.png"
+                                          class=" "
+                                          alt="swiper slider img"
+                                        />
+                                        <div class="card-body">
+                                          <p class="text-accent text-xsm mb-0">Immobranche</p>
+                                          <h5 class="card-title">Unsere neue Webseite</h5>
+                                          <p class="card-text text-accent text-xsm">München-Pasing</p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 mb-50">
+                                    <div class="card ">
+                                        <img
+                                          src="assets/images/home/slider-img-3.png"
+                                          class=" "
+                                          alt="swiper slider img"
+                                        />
+                                        <div class="card-body">
+                                          <p class="text-accent text-xsm mb-0">Wirtschaft</p>
+                                          <h5 class="card-title">Der moderne Städtebau</h5>
+                                          <p class="card-text text-accent text-xsm">München-Maxvorstadt</p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 mb-50">
+                                    <div class="card ">
+                                        <img
+                                          src="assets/images/home/slider-img-1.png"
+                                          class=" "
+                                          alt="swiper slider img"
+                                        />
+                                        <div class="card-body">
+                                          <p class="text-accent text-xsm mb-0">Bautenstand</p>
+                                          <h5 class="card-title">Projektstart eines Reihenhauses</h5>
+                                          <p class="card-text text-accent text-xsm">München-Allach</p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 mb-50">
+                                    <div class="card ">
+                                        <img
+                                          src="assets/images/home/slider-img-2.png"
+                                          class=" "
+                                          alt="swiper slider img"
+                                        />
+                                        <div class="card-body">
+                                          <p class="text-accent text-xsm mb-0">Baugenehmigungen</p>
+                                          <h5 class="card-title">Das neue Mehrfamilienhauses</h5>
+                                          <p class="card-text text-accent text-xsm">München-Nymphenburg</p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 mb-50">
+                                    <div class="card ">
+                                        <img
+                                          src="assets/images/home/slider-img-3.png"
+                                          class=" "
+                                          alt="swiper slider img"
+                                        />
+                                        <div class="card-body">
+                                          <p class="text-accent text-xsm mb-0">Wirtschaft</p>
+                                          <h5 class="card-title">Der moderne Städtebau</h5>
+                                          <p class="card-text text-accent text-xsm">München-Maxvorstadt</p>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="row news mb-0 more-content d-none">
+                                <div class="col-lg-4 col-sm-6 mb-50">
+                                    <div class="card ">
+                                        <img
+                                          src="assets/images/home/slider-img-4.png"
+                                          class=" "
+                                          alt="swiper slider img"
+                                        />
+                                        <div class="card-body">
+                                          <p class="text-accent text-xsm mb-0">Wirtschaft</p>
+                                          <h5 class="card-title">Nachhaltiges Wohnen</h5>
+                                          <p class="card-text text-accent text-xsm">Nachhaltiges Wohnen</p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 mb-50">
+                                    <div class="card ">
+                                        <img
+                                          src="assets/images/home/slider-img-5.png"
+                                          class=" "
+                                          alt="swiper slider img"
+                                        />
+                                        <div class="card-body">
+                                          <p class="text-accent text-xsm mb-0">Immobranche</p>
+                                          <h5 class="card-title">Unsere neue Webseite</h5>
+                                          <p class="card-text text-accent text-xsm">München-Pasing</p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 mb-50">
+                                    <div class="card ">
+                                        <img
+                                          src="assets/images/home/slider-img-3.png"
+                                          class=" "
+                                          alt="swiper slider img"
+                                        />
+                                        <div class="card-body">
+                                          <p class="text-accent text-xsm mb-0">Wirtschaft</p>
+                                          <h5 class="card-title">Der moderne Städtebau</h5>
+                                          <p class="card-text text-accent text-xsm">München-Maxvorstadt</p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 mb-50 ">
+                                    <div class="card ">
+                                        <img
+                                          src="assets/images/home/slider-img-1.png"
+                                          class=" "
+                                          alt="swiper slider img"
+                                        />
+                                        <div class="card-body">
+                                          <p class="text-accent text-xsm mb-0">Bautenstand</p>
+                                          <h5 class="card-title">Projektstart eines Reihenhauses</h5>
+                                          <p class="card-text text-accent text-xsm">München-Allach</p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 mb-50 ">
+                                    <div class="card ">
+                                        <img
+                                          src="assets/images/home/slider-img-2.png"
+                                          class=" "
+                                          alt="swiper slider img"
+                                        />
+                                        <div class="card-body">
+                                          <p class="text-accent text-xsm mb-0">Baugenehmigungen</p>
+                                          <h5 class="card-title">Das neue Mehrfamilienhauses</h5>
+                                          <p class="card-text text-accent text-xsm">München-Nymphenburg</p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 mb-50">
+                                    <div class="card ">
+                                        <img
+                                          src="assets/images/home/slider-img-3.png"
+                                          class=" "
+                                          alt="swiper slider img"
+                                        />
+                                        <div class="card-body">
+                                          <p class="text-accent text-xsm mb-0">Wirtschaft</p>
+                                          <h5 class="card-title">Der moderne Städtebau</h5>
+                                          <p class="card-text text-accent text-xsm">München-Maxvorstadt</p>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="text-center mt-5 pt-lg-4">
+                                <a href="#" class="show-more text-black font-zen text-xsm fw-medium text-primary link">mehr laden</a>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="construction" role="tabpanel" aria-labelledby="profile-tab"> 
+                            <div class="row news mb-0">
+                                <div class="col-lg-4 col-sm-6 mb-50">
+                                    <div class="card ">
+                                        <img
+                                          src="assets/images/home/slider-img-1.png"
+                                          class=" "
+                                          alt="swiper slider img"
+                                        />
+                                        <div class="card-body">
+                                          <p class="text-accent text-xsm mb-0">Bautenstand</p>
+                                          <h5 class="card-title">Projektstart eines Reihenhauses</h5>
+                                          <p class="card-text text-accent text-xsm">München-Allach</p>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                          <div class="tab-pane" id="building" role="tabpanel" aria-labelledby="building-tab"> 
+                            <div class="row news mb-0">
+                                <div class="col-lg-4 col-sm-6 mb-50">
+                                    <div class="card ">
+                                        <img
+                                          src="assets/images/home/slider-img-2.png"
+                                          class=" "
+                                          alt="swiper slider img"
+                                        />
+                                        <div class="card-body">
+                                          <p class="text-accent text-xsm mb-0">Baugenehmigungen</p>
+                                          <h5 class="card-title">Das neue Mehrfamilienhauses</h5>
+                                          <p class="card-text text-accent text-xsm">München-Nymphenburg</p>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>    
+                        </div>
+                          <div class="tab-pane" id="real-estate" role="tabpanel" aria-labelledby="real estate-tab"> 
+                            <div class="row news mb-0">
+                                <div class="col-lg-4 col-sm-6 mb-50">
+                                    <div class="card ">
+                                        <img
+                                          src="assets/images/home/slider-img-5.png"
+                                          class=" "
+                                          alt="swiper slider img"
+                                        />
+                                        <div class="card-body">
+                                          <p class="text-accent text-xsm mb-0">Immobranche</p>
+                                          <h5 class="card-title">Unsere neue Webseite</h5>
+                                          <p class="card-text text-accent text-xsm">München-Pasing</p>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>        
+                        </div>
+                          <div class="tab-pane" id="culture" role="tabpanel" aria-labelledby="culture-tab"> 
+
+                        </div>
+                          <div class="tab-pane" id="projects" role="tabpanel" aria-labelledby="projects-tab"> </div>
+                          <div class="tab-pane" id="enterprise" role="tabpanel" aria-labelledby="enterprise-tab"> </div>
+                          <div class="tab-pane" id="economy" role="tabpanel" aria-labelledby="economy-tab">
+                            <div class="row news mb-0">
+                                <div class="col-lg-4 col-sm-6 mb-50">
+                                    <div class="card ">
+                                        <img
+                                          src="assets/images/home/slider-img-3.png"
+                                          class=" "
+                                          alt="swiper slider img"
+                                        />
+                                        <div class="card-body">
+                                          <p class="text-accent text-xsm mb-0">Wirtschaft</p>
+                                          <h5 class="card-title">Der moderne Städtebau</h5>
+                                          <p class="card-text text-accent text-xsm">München-Maxvorstadt</p>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6 mb-50">
+                                    <div class="card ">
+                                        <img
+                                          src="assets/images/home/slider-img-4.png"
+                                          class=" "
+                                          alt="swiper slider img"
+                                        />
+                                        <div class="card-body">
+                                          <p class="text-accent text-xsm mb-0">Wirtschaft</p>
+                                          <h5 class="card-title">Nachhaltiges Wohnen</h5>
+                                          <p class="card-text text-accent text-xsm">Nachhaltiges Wohnen</p>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>    
+                          </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- news category section end -->
+
+        <!-- contact section start -->
+        <section class="contact">
+          <div class="contact__label-container">
+            <p class="contact__label label-sticky">KONTAKT</p>
+          </div>
+          <div class="container custom-container">
+            <div class="row flex-wrap-reverse">
+              <div class="col-lg-6">
+                <form class="contact-form">
+                  <div
+                    class="mb-4 pt-lg-4 pt-3"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                  >
+                    <label for="username" class="form-label">
+                      <span>01</span> Ihr Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="username"
+                      placeholder="Max Mustermann *"
+                    />
+                  </div>
+                  <div
+                    class="mb-4"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                  >
+                    <label for="email" class="form-label">
+                      <span>02</span> Ihr E-Mail</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="max@mustermann.de *"
+                    />
+                  </div>
+                  <div
+                    class="mb-4"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                  >
+                    <label for="telephone" class="form-label">
+                      <span>03</span> Ihre Telefonnummer</label
+                    >
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="telephone"
+                      placeholder="123 456 789 01"
+                    />
+                  </div>
+                  <div
+                    class="mb-4"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                  >
+                    <label for="textarea" class="form-label"
+                      ><span>04</span> Ihre Nachricht</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="textarea"
+                      rows="4"
+                      placeholder="Hallo, ich habe eine Frage bezüglich... *"
+                    ></textarea>
+                  </div>
+                  <div
+                    class="mb-4 form-check ps-0"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                  >
+                    <input
+                      type="radio"
+                      class="form-radio"
+                      id="form-check"
+                    />
+                    <label class="form-check-label" for="form-check"
+                      >Ja, ich habe die Datenschutzerklärung gelesen und bin damit
+                      einverstanden.</label
+                    >
+                  </div>
+  
+                  <button
+                    type="submit"
+                    class="btn btn-outline-light"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                  >
+                    Nachricht senden
+                  </button>
+                </form>
+              </div>
+              <div class="col-lg-6 d-lg-flex d-xxl-block mb-5">
+                <div
+                  class="contact__content"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="100"
+                >
+                  <h2 class="contact__title">
+                    Sie haben Fragen?
+                    <span class="d-block">Wir helfen gerne weiter.</span>
+                  </h2>
+  
+                  <div
+                    class="contact__links"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                  >
+                    <p class="contact__text">Kontakt</p>
+                    <div>
+                      <a href="mailto:info@suwohnbau.de" class="contact-link"
+                        >info@suwohnbau.de</a
+                      >
+                      <a href="tel:089-244-126-520" class="contact-link"
+                        >089/244 126 520</a
+                      >
+                    </div>
+                  </div>
+  
+                  <div
+                    class="contact__address"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                  >
+                    <p class="contact__text">Adresse</p>
+                    <p>
+                      SU Wohnabau GmbH <br />Fraunhoferstraße 36 <br />
+                      80469 München
+                    </p>
+                  </div>
+  
+                  <div
+                    class="contact__social-links"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                  >
+                    <p class="contact__text">Social Media</p>
+                    <a href="#" class="social-link">
+                      <img
+                        src="assets/images/instagram.svg"
+                        alt="instagram icon"
+                        class="social-link-icon"
+                      />
+                    </a>
+                    <a href="#" class="social-link">
+                      <img
+                        src="assets/images/linkedin.svg"
+                        alt="linkedin icon"
+                        class="social-link-icon"
+                      />
+                    </a>
+                    <a href="#" class="social-link">
+                      <img
+                        src="assets/images/social-icon.svg"
+                        alt="app icon"
+                        class="social-link-icon"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- contact section end -->
+    </main>
+    <!-- footer section start -->
+    <footer class="footer">
+      <div class="container custom-container footer-content">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="footer-content-container">
+              <p class="footer__text">2023 &commat; SU Wohnabu</p>
+              <div class="footer__links">
+                <a href="#" class="footer-link">Impressum</a>
+                <a href="#" class="footer-link">Datenschutz</a>
+                <a href="#" class="footer-link">Rechtliche Hinweise</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section end -->
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- swiper js file -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- aos js file -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- custom js file -->
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

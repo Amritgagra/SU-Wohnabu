@@ -1,0 +1,239 @@
+.projects {
+  padding-block: 214px;
+  position: relative;
+}
+@media screen and (max-width: 1200px) {
+  .projects {
+    padding-block: 100px;
+  }
+}
+.projects .project {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../images/home/project-img-1.png) no-repeat center;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/home/project-img-1.png) no-repeat center;
+  background-size: cover;
+  height: 691px;
+  margin-bottom: 140px;
+  padding: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.projects .project__label {
+  position: absolute;
+  left: 47px;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  top: 22px;
+  font-size: 18px;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 500;
+}
+@media screen and (max-width: 1800px) {
+  .projects .project__label {
+    left: -30px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .projects .project__label {
+    left: -30px;
+    font-size: 14px;
+  }
+}
+.projects .project__label-container {
+  position: sticky;
+  top: 130px;
+  margin-block: 80px;
+}
+@media screen and (max-width: 768px) {
+  .projects .project__label-container {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .projects .project-wrapper {
+    overflow-y: auto;
+    max-height: 100vh;
+  }
+  .projects .project-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .projects .project {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .projects .project {
+    height: 543px;
+    padding: 50px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .projects .project {
+    margin-bottom: 50px;
+    padding: 40px 10px;
+  }
+}
+.projects .project--two {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url(../images/home/project-img-2.png) no-repeat center;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/home/project-img-2.png) no-repeat center;
+}
+.projects .project--three {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url(../images/home/project-img-3.png) no-repeat center;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/home/project-img-3.png) no-repeat center;
+}
+.projects .project--four {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url(../images/home/project-img-4.png) no-repeat center;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/home/project-img-4.png) no-repeat center;
+}
+.projects .project--five {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url(../images/home/project-img-5.png) no-repeat center;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/home/project-img-5.png) no-repeat center;
+}
+.projects .project__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.projects .project__content p {
+  font-size: 18px;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 400;
+  line-height: 26px;
+  color: #fff;
+  margin: 0;
+}
+@media screen and (max-width: 992px) {
+  .projects .project__content p {
+    font-size: 15px;
+  }
+}
+.projects .project__content-title {
+  margin-bottom: 0;
+  color: #fff;
+}
+@media screen and (max-width: 992px) {
+  .projects .project__content-title {
+    font-size: 18px;
+  }
+}
+.projects .project__content .btn {
+  margin-top: 30px;
+}
+@media screen and (max-width: 992px) {
+  .projects .project__content .btn {
+    margin-top: 20px;
+  }
+}
+.projects .project .badge__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.badge-accent {
+  background: #BA7912;
+  margin-bottom: 0;
+  padding: 18px 47px;
+  border-radius: 22px;
+  font-size: 18px;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 500;
+  line-height: 26px;
+  color: #fff;
+}
+@media screen and (max-width: 1800px) {
+  .badge-accent {
+    padding: 10px 30px;
+    border-radius: 16px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .badge-accent {
+    padding: 13px 43px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+.project-sr {
+  -ms-flex-item-align: end;
+      align-self: end;
+  font-size: 30px;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 500;
+  line-height: 44px;
+  color: #fff;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 1800px) {
+  .project-sr {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .project-sr {
+    font-size: 18px;
+  }
+}
+
+.project__content-text {
+  position: relative;
+}
+.project__content-text::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  left: -4px;
+  background: url(../images/project-icon.svg) no-repeat center;
+  background-size: contain;
+  position: relative;
+}
+
+.project-detail-content-wrapper {
+  position: relative;
+}
+.project-detail-content-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../images/logo-bg.png) no-repeat center;
+  background-size: contain;
+  mix-blend-mode: multiply;
+  z-index: -1;
+}
+
+@media screen and (max-width: 992px) {
+  .project-cards img.img-fluid {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}/*# sourceMappingURL=projects.css.map */
